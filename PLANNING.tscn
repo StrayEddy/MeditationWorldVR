@@ -1,0 +1,27 @@
+[gd_scene format=2]
+
+[node name="PLANNING" type="Node"]
+
+[node name="TODO" type="Node" parent="."]
+
+[node name="Meditate" type="Node" parent="TODO"]
+
+[node name="Beautiful Boot Splash" type="Node" parent="TODO"]
+
+[node name="IN PROGRESS" type="Node" parent="."]
+
+[node name="DONE" type="Node" parent="."]
+
+[node name="Login to server" type="Node" parent="DONE"]
+
+[node name="Basic world model" type="Node" parent="DONE"]
+
+[node name="Join a meditation room" type="Node" parent="DONE"]
+
+[node name="Scene transition" type="Node" parent="DONE"]
+
+[node name="Create All Rooms" type="Node" parent="DONE"]
+
+[node name="Background loading" type="Node" parent="DONE"]
+
+[node name="Mute player" type="Node" parent="DONE"]

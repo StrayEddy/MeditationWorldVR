@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Woman.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Man.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Player.gd" type="Script" id=4]
+
+[sub_resource type="QuadMesh" id=4]
+
+[sub_resource type="SpatialMaterial" id=5]
+resource_local_to_scene = true
+flags_transparent = true
+flags_unshaded = true
+
+[sub_resource type="SphereShape" id=3]
+radius = 0.406764
+
+[node name="Player" type="Spatial"]
+script = ExtResource( 4 )
+
+[node name="Audio" type="AudioStreamPlayer3D" parent="."]
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( -1.14044e-07, 0, 1, 0, 0.7, 0, -0.7, 0, -1.62921e-07, 0, 1.5, 0 )
+mesh = SubResource( 4 )
+material/0 = SubResource( 5 )
+
+[node name="StaticBody" type="StaticBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+shape = SubResource( 3 )
+
+[node name="Woman" parent="." instance=ExtResource( 2 )]
+
+[node name="Man" parent="." instance=ExtResource( 3 )]

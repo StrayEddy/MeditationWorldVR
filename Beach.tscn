@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Room.gd" type="Script" id=1]
+[ext_resource path="res://audio/beach.ogg" type="AudioStream" id=2]
+[ext_resource path="res://Fireplace.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Options.tscn" type="PackedScene" id=4]
+
+[node name="Beach" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25.7945, 14.8588, 57.6184 )
+script = ExtResource( 1 )
+
+[node name="Audio" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource( 2 )
+
+[node name="Options" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -4 )
+
+[node name="Fireplace" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4 )

@@ -1,0 +1,31 @@
+Black.material (mostly water):
+- color: white
+- metalic: .5
+- specular: 0
+- roughness: 0
+
+Brown.material (dock):
+- metallic: 0
+- specular: 0
+- roughness: 0
+
+Green.material (grass):
+- metallic: 0
+- specular: 0
+- roughness: 1
+
+Grey.material (ladder and peak):
+- metallic: 0
+- specular: 0
+- roughness: 1
+
+White.material (rock):
+- metallic: .5
+- specular: 1
+- roughness: .3
+
+Yellow.material (sand):
+- metallic: 0
+- specular: 0
+- roughness: .5
+- emission: .2
